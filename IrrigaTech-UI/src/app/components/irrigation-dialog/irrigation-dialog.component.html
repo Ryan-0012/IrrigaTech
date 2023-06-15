@@ -1,0 +1,51 @@
+<div class="container-fluid d-flex flex-column justify-content-center">
+  <h1 mat-dialog-title>Scheduling</h1>
+    <div class="row m-2 time">
+    </div>
+    
+    <div class="container calendar m-2">
+      <div class="row">
+        <mat-form-field appearance="fill">
+          <mat-label>Choose a date</mat-label>
+          <input matInput [matDatepicker]="picker" min="{{currentDate | date:'yyyy-MM-ddTHH:mm:ss.sss'}}" style="width: 100px; text-align: left;" [(ngModel)]="data.specificDate">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker ></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="row week mt-3">
+        <ul>
+          <li (click)="toggleActive(1)" (click)="selectedDays(1)" [class.active]="isActive(1)"><span class="text sun">S</span></li>
+          <li (click)="toggleActive(2)" (click)="selectedDays(2)" [class.active]="isActive(2)"><span class="text click">M</span></li>
+          <li (click)="toggleActive(3)" (click)="selectedDays(3)" [class.active]="isActive(3)"><span class="text click">T</span></li>
+          <li (click)="toggleActive(4)" (click)="selectedDays(4)" [class.active]="isActive(4)"><span class="text click">W</span></li>
+          <li (click)="toggleActive(5)" (click)="selectedDays(5)" [class.active]="isActive(5)"><span class="text click">T</span></li>
+          <li (click)="toggleActive(6)" (click)="selectedDays(6)" [class.active]="isActive(6)"><span class="text click">F</span></li>
+          <li (click)="toggleActive(7)" (click)="selectedDays(7)" [class.active]="isActive(7)"><span class="text click">S</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row m-3" style="display: flex; flex-direction: column;">
+      <div class="col">
+        <label for="time">Time</label>
+        <br>
+        <input type="time" id="time" class="time" class="time" [(ngModel)]="data.startTime">
+      </div>
+      <div class="col mt-3">
+        <label for="duration">Duration</label>
+        <br>
+        <input type="time" id="duration" name="duration" step="1" class="duration" [(ngModel)]="data.duration">
+      </div>          
+    </div>
+
+    <div class="row m-3">
+      <div mat-dialog-actions>
+        <button mat-button (click)="cancel()">No Thanks</button>
+        <button mat-button [mat-dialog-close]="{ specificDate: data.specificDate, duration: data.duration, startTime: data.startTime }" (click)="save()" cdkFocusInitial>Ok</button>
+      </div>
+    </div>
+</div>
+
+
+

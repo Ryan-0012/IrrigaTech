@@ -1,0 +1,39 @@
+<br>
+<br>
+<br>
+<br>
+<div class="container" style="justify-content: center; justify-items: center;">
+  <div class="flex-center" >
+      
+      <div  #svgProgress class="progress" >
+                  
+          
+        <svg #svgProgress viewBox="0 0 200 200">
+          <text x="50%" y="50%" text-anchor="middle">{{ statusValue }}%</text>
+          <text x="50%" y="75%" text-anchor="middle">Humidity</text>
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+          </linearGradient>
+          </defs>
+          
+          <path #svgProgress
+            class="back"
+            d="M50,150 A 60 60 0 1 1 150 150"
+            fill="transparent"
+            stroke="#fff"
+            stroke-width="5" 
+          />
+    
+          <path #svgProgress
+            d="M50,150 A 60 60 0 1 1 150 150"
+            fill="transparent"
+            stroke="url(#linear)"
+            stroke-width="8"
+            class="fill"
+          />
+        </svg>
+      </div>
+    </div>
+</div>

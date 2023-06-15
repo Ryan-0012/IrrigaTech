@@ -1,0 +1,37 @@
+<div class="container-fluid">
+        <div class="container">
+                <div class="row">
+                        <div class="col-3 d-none d-sm-block text-welcome-col">
+                                <div style="display: flex;justify-content: right;">
+                                        <div style="flex-direction: column;">
+                                                <div class="col" style="display: flex;">
+                                                        <h4 style="font-weight: 300;">Welcome, {{username}}</h4>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-sm-6 col-12" style="display: flex;justify-content: center; align-items: center;">
+                                <app-humidity-status></app-humidity-status>
+                        </div>
+                        <div class="col-3 d-none d-sm-block icons">
+                                
+                                <span class="notification-icon" routerLink="/">
+                                        <ion-icon name="notifications-outline" style="width: 25px; height: 25px;"></ion-icon>
+                                </span>
+                        </div> 
+                </div>
+                <div class="row">
+                        <div class="col d-flex justify-content-end">
+                                <button (click)="enviarMensagem()" type="button" class="btn btn-outline-success">ON</button>
+                        </div>
+                        <div class="col">
+                                <button (click)="enviarMensagem2()" type="button" class="btn btn-outline-danger">OFF</button>
+                        </div>
+                </div>
+                <div class="row" style="background-color: #ffff; border-top-left-radius: 30px; border-top-right-radius: 30px;">
+                        <div class="col" style="display: flex;justify-content: center;">
+                                <app-weather-widget-main></app-weather-widget-main>
+                        </div>
+                </div>
+        </div>
+</div>

@@ -1,0 +1,122 @@
+:root {
+    --crl: #222327;
+  }
+  
+  .navsmall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffffff;
+    position: relative;
+    width: 300px;
+    height: 60px;
+    border-radius: 50px;
+    padding-left: 18px;
+    text-align: center;
+  }
+  
+  .navsmall ul {
+    display: flex;
+    width: 350px;
+  }
+  
+  .navsmall ul li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    margin-right: 14px;
+  }
+  
+  .navsmall ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .navsmall ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 70px;
+    font-size: 1.3em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--crl);
+  }
+  
+  .navsmall ul li.active a .icon {
+    transform: translateY(-26px);
+  }
+  
+  .navsmall ul li a .text {
+    position: absolute;
+    color: var(--crl);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .navsmall ul li.active a .text {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  
+  .indicator {
+    position: absolute;
+    top: -50%;
+    width: 60px;
+    height: 60px;
+    background: #29fd53;
+    border-radius: 50%;
+    border: 6px solid var(--navcolor);
+    transition: 0.5s;
+  }
+  
+  .indicator::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 4px 10px var(--navcolor); 
+  }
+  
+  .indicator::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -25px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -4px 10px var(--navcolor); 
+  }
+  
+  
+  
+  
+  .navsmall ul li:nth-child(1).active ~ .indicator {
+    transform: translateX(calc(50px * 0));
+  }
+  
+  .navsmall ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(72px * 1));
+  }
+  
+  .navsmall ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(72px * 2));
+  }
+  

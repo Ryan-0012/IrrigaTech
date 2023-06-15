@@ -1,0 +1,13 @@
+<ng-container *ngIf="accountService.isLoggedIn() && screenWidth >= 992">
+    <app-navbar class="navbar fixed-top "></app-navbar>
+</ng-container>
+
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
+
+<footer>
+    <ng-container *ngIf="accountService.isLoggedIn() && screenWidth < 992">
+        <app-navbar-rwd class="navbarsmall fixed-bottom"></app-navbar-rwd>
+    </ng-container>
+</footer>

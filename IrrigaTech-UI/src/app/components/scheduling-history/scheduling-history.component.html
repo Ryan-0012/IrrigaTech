@@ -1,0 +1,42 @@
+
+<div class="container">
+    
+    <ng-template #nohistory>
+
+        <div class="d-flex justify-content-center">
+            <h3 class="text-dark mt-3">You don't have any schedules yet...</h3>
+        </div>
+
+    </ng-template>
+
+    <ng-template [ngIf]="irrigationsHistorys.length > 0" [ngIfElse]="nohistory">
+        
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>StartTime</th>
+                    <th>EndTime</th>
+                    <th>Duration</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let irrigationHistory of irrigationsHistorys">
+                    <td>
+                        {{ irrigationHistory.startTime.toString().substring(0, 5) }}
+                    </td>
+                    <td>
+                        {{ irrigationHistory.endTime.toString().substring(0, 5) }}
+                    </td>
+                    <td>    
+                        {{ irrigationHistory.duration }}
+                    </td>
+                    <td>
+                        {{ irrigationHistory.date | date:'yyyy-MM-dd' }}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </ng-template>
+  </div>

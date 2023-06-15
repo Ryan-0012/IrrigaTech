@@ -1,0 +1,69 @@
+
+#number1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #555;
+}
+
+.humidity1 {
+    font-size: 40px;
+    margin-top: 80px;
+    font-weight: 600;
+    color: #555;
+    
+}
+
+svg {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+:root {
+    --progress-width: 100px;
+    --progress-height: 300px;
+  }
+  
+  html, body, .flex-center {
+    height: 100%;
+  }
+  
+  .flex-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .progress {
+    display: inline-block;
+    background-color: transparent;
+    width: var(--progress-width);
+    height: var(--progress-height);
+  }
+  
+  .progress svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(8px 4px 8px rgba(0,0,0,0.4));
+    
+  }
+  
+  .progress .fill {
+    stroke: url(#GradientColor);
+    stroke-dasharray: 260px;
+    stroke-dashoffset: var(--meu-valor);
+    animation: none;
+    transition: stroke-dashoffset 0.7s ease-in-out;
+    
+  }
+  
+  .progress .fill,
+  .progress .back {
+    stroke-linecap: round;
+    
+  }
+  
+  @keyframes dashAnimation {
+    to {
+      stroke-dashoffset: var(--meu-valor);
+    }
+  }

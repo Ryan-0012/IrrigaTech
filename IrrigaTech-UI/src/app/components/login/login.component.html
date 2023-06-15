@@ -1,0 +1,43 @@
+<div class="container">
+    <input id="register_toggle" type="checkbox">
+    <div class="slider">
+      <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
+        <span class="title">Login</span>
+        <div class="form_control">
+          <input required="" class="input" type="text" formControlName="usernameLogin">
+          <label class="label">Username</label>
+        </div>
+        <div class="form_control">
+          <input required="" class="input" type="password" formControlName="passwordLogin">
+          <label class="label">Password</label>
+        </div>
+        <button>Login</button>
+  
+        <span class="bottom_text">Don't have an account? <label class="swtich" for="register_toggle">Sign Up</label> </span>
+      </form>
+      <form class="form" [formGroup]="registerForm" (ngSubmit)="onSubmitRegister()">
+        <span class="title">Sign Up</span>
+        <div class="form_control">
+          <input required="" class="input" type="text" formControlName="usernameRegister">
+          <label class="label">Username</label>
+        </div>
+        <div class="form_control">
+          <input required="" class="input" type="text" formControlName="fullnameRegister">
+          <label class="label">Full Name</label>
+        </div>
+        <div class="form_control">
+          <input required="" class="input" type="email" formControlName="emailRegister">
+          <label class="label">Email</label>
+        </div>
+        <div class="form_control">
+          <input required="" class="input" type="password" formControlName="passwordRegister">
+          <label class="label">Password</label>
+        </div>
+        <button style="color: black;">Sign Up</button>
+  
+        <span class="bottom_text">Already have an account? <label class="swtich" for="register_toggle">Sign In</label> </span>
+      </form>
+  
+      
+      </div>
+  </div>
