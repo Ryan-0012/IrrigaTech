@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IrrigaTech.Web", "IrrigaTech.Web\IrrigaTech.Web.csproj", "{7970A7EB-51E5-4431-BFB2-99B65378015A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irriga.Models", "Irriga.Models\Irriga.Models.csproj", "{48A12AD3-AB24-40C4-93EB-97B3B43AD6FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irriga.Repository", "Irriga.Repository\Irriga.Repository.csproj", "{1B165345-15FF-4E58-B95F-8ACF6435FD08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irriga.Identity", "Irriga.Identity\Irriga.Identity.csproj", "{310DDAB7-D5AE-4593-83EB-FC3F5EF472DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irriga.Services", "Irriga.Services\Irriga.Services.csproj", "{EC4B8301-0C9B-4398-B843-F41BAAC46953}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Irriga.Scheduler", "Irriga.Scheduler\Irriga.Scheduler.csproj", "{61A913BA-7B2C-4246-9915-466DD4E63FE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7970A7EB-51E5-4431-BFB2-99B65378015A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7970A7EB-51E5-4431-BFB2-99B65378015A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7970A7EB-51E5-4431-BFB2-99B65378015A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7970A7EB-51E5-4431-BFB2-99B65378015A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A12AD3-AB24-40C4-93EB-97B3B43AD6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A12AD3-AB24-40C4-93EB-97B3B43AD6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A12AD3-AB24-40C4-93EB-97B3B43AD6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A12AD3-AB24-40C4-93EB-97B3B43AD6FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B165345-15FF-4E58-B95F-8ACF6435FD08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B165345-15FF-4E58-B95F-8ACF6435FD08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B165345-15FF-4E58-B95F-8ACF6435FD08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B165345-15FF-4E58-B95F-8ACF6435FD08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{310DDAB7-D5AE-4593-83EB-FC3F5EF472DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310DDAB7-D5AE-4593-83EB-FC3F5EF472DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310DDAB7-D5AE-4593-83EB-FC3F5EF472DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310DDAB7-D5AE-4593-83EB-FC3F5EF472DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4B8301-0C9B-4398-B843-F41BAAC46953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4B8301-0C9B-4398-B843-F41BAAC46953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4B8301-0C9B-4398-B843-F41BAAC46953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4B8301-0C9B-4398-B843-F41BAAC46953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61A913BA-7B2C-4246-9915-466DD4E63FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A913BA-7B2C-4246-9915-466DD4E63FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A913BA-7B2C-4246-9915-466DD4E63FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A913BA-7B2C-4246-9915-466DD4E63FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75C34C25-503A-4968-BF51-2289FE205278}
+	EndGlobalSection
+EndGlobal

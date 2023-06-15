@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.10" />
+    <PackageReference Include="Quartz" Version="3.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Irriga.Identity\Irriga.Identity.csproj" />
+    <ProjectReference Include="..\Irriga.Models\Irriga.Models.csproj" />
+    <ProjectReference Include="..\Irriga.Repository\Irriga.Repository.csproj" />
+    <ProjectReference Include="..\Irriga.Scheduler\Irriga.Scheduler.csproj" />
+    <ProjectReference Include="..\Irriga.Services\Irriga.Services.csproj" />
+  </ItemGroup>
+
+</Project>
